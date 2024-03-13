@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Three{
+	
+	public static void main(String args[]){
+		
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+	
+		System.out.println("Enter the operation you want to perform");
+		char c = sc.nextChar();
+		
+		switch(c){
+			
+			case '+':
+				int sol = a+b;
+				System.out.println("Answer: "sol);
+				break;
+
+			case '-':
+				int sol = a-b;
+				System.out.println("Answer: "sol);
+				break;
+			case '*':
+				int sol = a*b;
+				System.out.println("Answer: "sol);
+				break;
+			case '/':
+				int sol = a/b;
+				System.out.println("Answer: "sol);
+				break;
+			default :
+				System.out.println("Symbol not allowed");
+				break;
+		}
+	}
+}
+
+				
+		
